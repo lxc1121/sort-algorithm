@@ -21,7 +21,7 @@ void merge(int arr[50], int l, int h)
 	int i=l,j=mid+1;
 	while(i <= mid && j <= h)
 	{
-		if (arr[i] > arr[j])
+		if (arr[i] > arr[j]) //从小到大排序
 		{
 			insert(arr,i,j)
 			mid += 1;
