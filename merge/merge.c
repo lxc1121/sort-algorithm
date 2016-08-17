@@ -1,3 +1,5 @@
+/*直接插入排序和归并排序结合，节省空间
+*/
 #include <stdio.h>
 
 /*insert arr[j] at position i;
