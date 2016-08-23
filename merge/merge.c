@@ -1,4 +1,6 @@
-/*直接插入排序和归并排序结合，节省空间
+/*直接插入排序和归并排序结合，节省空间空间复杂度 n
+* 牺牲了时间，算法复杂度 最坏情况下
+* 数据移动次数 n^2/4*Log2^n
 */
 #include <stdio.h>
 
@@ -23,7 +25,7 @@ void merge(int arr[50], int l, int h)
 	{
 		if (arr[i] > arr[j]) //从小到大排序
 		{
-			insert(arr,i,j)
+			insert(arr,i,j) //最坏情况下数据移动次数 n^2/4*Log2^n
 			mid += 1;
 			j++;
 		}
